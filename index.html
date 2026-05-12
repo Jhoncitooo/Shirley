@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación martes 12/05/2026</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Invitación martes 12/05/2026</h1>
+            <p class="subtitle">La cuenta regresiva ha comenzado...</p>
+        </header>
+
+        <section class="countdown-section">
+            <div class="countdown">
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <span class="label">Días</span>
+                </div>
+                <div class="separator">:</div>
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <span class="label">Horas</span>
+                </div>
+                <div class="separator">:</div>
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <span class="label">Minutos</span>
+                </div>
+                <div class="separator">:</div>
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <span class="label">Segundos</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="question-section" id="question-card">
+            <h2>¿Olvidarás la salida de mañana?</h2>
+            <div class="buttons">
+                <button id="btn-yes" class="btn btn-yes">Sí</button>
+                <button id="btn-no" class="btn btn-no">No</button>
+            </div>
+        </section>
+
+        <div id="result-overlay" class="overlay hidden">
+            <div class="modal">
+                <div id="result-content"></div>
+                <button id="btn-close" class="btn btn-close">Cerrar</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
